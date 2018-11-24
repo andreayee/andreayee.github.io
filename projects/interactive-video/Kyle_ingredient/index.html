@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Kyle's Ingredient Page</title>
+</head>
+
+<body>
+
+<!-- Ingredient game -->
+
+<div class="title">
+  <div id="titlebox">
+    <h1>
+      pick the right ingredients
+    </h1>
+    <p>
+      <i>
+      what would mom use to make mac n cheese?
+    </i>
+    </p>
+  </div>
+</div>
+
+<div class="ingre-container">
+
+  <div class="ingre-row">
+
+  <div class="ingrebox" id="g0" onclick="playVideo(this)">
+    <img class="ingredient" id="i0" src="image/pasta.jpg">
+  </div>
+
+  <div class="ingrebox" id="ng0" onclick="playAudio(this);alert('It is for spaghetti, not mac n cheese.')">
+    <img class="n-ingredient" src="image/garlic.jpg">
+  </div>
+
+  <div class="ingrebox" id="g1" onclick="playVideo(this)">
+    <img class="ingredient" id="i1" src="image/butter.jpg">
+  </div>
+
+  <div class="ingrebox" id="g2" onclick="playVideo(this);">
+    <img class="ingredient" id="i2" src="image/milk.jpg">
+  </div>
+
+</div>
+<div class="ingre-row">
+  <div class="ingrebox" id="ng2" onclick="playAudio(this);alert('Are you sure...?')">
+    <img class="n-ingredient" src="image/pork.jpg">
+  </div>
+
+  <div class="ingrebox" id="g3" onclick="playVideo(this)">
+    <img class="ingredient" id="i3" src="image/cheese.jpg">
+  </div>
+
+  <div class="ingrebox" id="g4" onclick="playVideo(this)">
+    <img class="ingredient" id="i4" src="image/flour.jpg">
+  </div>
+
+  <div class="ingrebox" id="ng3" onclick="playAudio(this);alert('Mom never added this one.')">
+    <img class="n-ingredient" src="image/onion.jpg">
+  </div>
+</div>
+
+</div>
+
+<video class="videos" id="v0" preload="metadata" controls>
+  <source src="video/pasta.mp4" type="video/mp4">
+</video>
+
+<video class="videos" id="v1" preload="metadata" controls>
+  <source src="video/butter.mp4" type="video/mp4">
+</video>
+
+<video class="videos" id="v2" preload="metadata" controls>
+  <source src="video/milk.mp4" type="video/mp4">
+</video>
+
+<video class="videos" id="v3" preload="metadata" controls>
+  <source src="video/cheese.mp4" type="video/mp4">
+</video>
+
+<video class="videos" id="v4" preload="metadata" controls>
+  <source src="video/flour.mp4" type="video/mp4">
+</video>
+
+
+<div id="lets-cook" class="footer" class="animate-flicker" onclick="window.location.href='../Kyle_cook/index.html'">
+      <div class="subtitle">
+       <h1>
+         everything's ready. let's start cooking!
+       </h1>
+
+       <p class="animate-flicker">
+        <i>
+          click anywhere to continue
+        </i>
+      </p>
+    </div>
+
+</body>
+<script src="js/script.js" type="text/javascript">
+</script>
+</html>
