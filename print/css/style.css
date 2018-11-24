@@ -1,0 +1,103 @@
+body {
+  width: 100%;
+  max-width: 1500px;
+  min-width: 1000px;
+  height: 100%;
+  overflow-x: hidden;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: rgba(255,249,245,1);
+
+  font-family: "Helvetica";
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  line-height: 2em;
+  color: grey;
+
+  display: flex;
+  flex-direction: column;
+
+
+  justify-content: center;
+  align-items: center;
+}
+
+h4 {
+  margin: 2%;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+a:hover {
+  
+  background-color: rgba(255,230,230,1);
+  cursor: crosshair;
+}
+
+
+a:visited {
+  color: grey;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+
+.intro {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  left: 20%;
+
+}
+
+.title {
+  width: 30%;
+  height: auto;
+
+  /*left: 10%;*/
+  margin: 0; 
+  /*font-size: 80px;*/
+  letter-spacing: .2em;
+  text-align: left;
+
+}
+
+.title h1 {
+  margin: 0;
+  height: auto;
+}
+
+
+
+.subtitle {
+  width: 70%;
+  /*height: 10%;*/
+
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  /*left: 10%;*/
+
+  margin: 2%;
+
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+
