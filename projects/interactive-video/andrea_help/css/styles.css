@@ -1,0 +1,359 @@
+body {
+	font-family: helvetica;
+	margin: 0;
+	padding: 0; 
+	width: 100%;
+	height: 200%;
+	color: black;
+	top: 0;
+
+	align-items: center;
+	justify-content: center;
+	font-size: 1.2em;
+
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
+@-webkit-keyframes Background {
+    0% {background-color: crimson;}
+    20% {background-color: coral;}
+    40% {background-color: lemonchiffon;}
+    60% {background-color: bisque;}
+    80% {background-color: pink;}
+    100% {background-color: salmon}
+}
+
+  @keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+
+
+
+
+/*page 3*/
+
+#page-3 {
+	display: flex;
+	flex-direction: column;
+	background-color: pink; 
+	height: 1000px;
+	width: 100%;
+	color: white;
+	text-align: left;
+
+	letter-spacing: 2px; 
+	line-height: 2em;
+}
+
+
+.col-3a {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+
+	justify-content: center;
+	align-items: center;
+
+}
+.row-3a {
+	height: 100px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+
+.row-3a a {
+	width: 10%;
+	padding: 5px 0 5px 0;
+	margin: 1%;
+	background-color: white;
+	color: pink;
+	cursor: pointer;
+	text-decoration: none;
+
+}
+
+.row-3a h4 {
+	margin: 0;
+}
+
+/*timeline bar*/
+
+.begin-timeline {
+	display: flex;
+	flex-direction: column;
+}
+
+.sticky-bar {
+	text-align: center;
+	position: sticky;
+	background-color: #eeeeee;
+	color: white;
+	top: 0;
+	/*height: 2%;*/
+	width: cover;
+	z-index: 20;
+}
+
+.sticky-bar img {
+	width: 100%;
+}
+
+
+
+/*page 4*/
+#page-4 {
+	display: flex;
+	flex-direction: column;
+	position: sticky;
+	/*background-image: linear-gradient(salmon,pink); */
+	background-color: pink;
+	background-image: url("../img/whatsapp.png");
+	background-size: cover;
+	background-position: center; /* Center the image */
+  	background-repeat: no-repeat; /* Do not repeat the image */
+	top: 0;
+	height: 900px;
+	width: 100%;
+	color: white;
+	text-align: left;
+}
+
+
+
+
+
+/*page 5 whatsapp bottom bar */
+/*#page-5 {
+	width: 100%;
+	height: 100%;
+}
+#page-5 img {
+	position: absolute;
+	bottom: 180%;
+	width: 100%;
+	height: auto;
+	
+	z-index: 20;
+
+}
+*/
+
+#page-5 {
+	text-align: center;
+	position: sticky;
+	/*background-color: #eeeeee;*/
+	/*color: white;*/
+	top: 100%;
+	/*height: 100%;*/
+	width: cover;
+	z-index: 20;
+}
+
+#page-5 img {
+	width: 100%;
+}
+
+
+
+
+/*page 6*/
+#page-6 {
+	display: flex;
+	flex-direction: column;
+
+	background-image: url("../img/whatsapp-background.png");
+	background-position: left; /* Center the image */
+  	background-repeat: repeat; /* Do not repeat the image */
+	top: 0;
+	height: 2000px;
+	width: 70%;
+	margin-left: 30%;
+
+	text-align: left;
+	font-family: arial;
+
+}
+
+.col-6	{
+	height: 2000px;
+}
+#page-6 p {
+	width: 80%;
+	/*padding: 2.5%;*/
+	margin: 5%;
+	margin-left: 5%;
+	text-align: justify;
+	z-index: 5;
+}
+
+.a {
+	background-color: #e2f6cb;
+	border-radius: 20px;
+	width: 40%;
+	margin: 2.5%;
+	float: right;
+	position: sticky;
+	opacity: 0;
+
+
+
+
+}
+
+.b {
+	background-color: white;
+	border-radius: 20px;
+	width: 40%;
+	margin: 2.5%;
+	float: left;
+	position: sticky;
+	opacity: 0;
+
+}
+
+
+.sticky-text-6a {
+	top: 10%;
+	/*opacity: 0;*/
+	-webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+            animation: fadein 5s;
+            animation-delay: 3s;
+}
+
+.sticky-text-6b {
+	top: 20%;
+	-webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+            animation: fadein 5s;
+            animation-delay: 5s;
+}
+
+.sticky-text-6c {
+	top: 30%;
+	-webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+            animation: fadein 5s;
+            animation-delay: 7s;
+}
+
+.sticky-text-6d {
+	top: 40%;
+	-webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+            animation: fadein 5s;
+            animation-delay: 9s;
+}
+
+.sticky-text-6e {
+	top: 50%;
+	-webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+            animation: fadein 5s;
+            animation-delay: 12s;
+}
+
+.sticky-text-6f {
+	top: 60%;
+	-webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+            animation: fadein 5s;
+            animation-delay: 15s;
+}
+
+.sticky-text-6g {
+	top: 70%;
+	-webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+            animation: fadein 5s;
+            animation-delay: 17s;
+}
+
+.sticky-text-6h {
+	top: 80%;
+	-webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+            animation: fadein 5s;
+            animation-delay: 19s;
+}
+
+.sticky-text-6i {
+	top: 90%;
+	-webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+            animation: fadein 5s;
+            animation-delay: 21s;
+
+}
+
+
+.page-7 {
+	width: 100%;
+	height: 100%;
+	top: 437%;
+	background-color: #eeeeee;
+	color: grey;
+
+	display: flex;
+	position: absolute;
+	z-index: 0;
+
+	letter-spacing: 2px;
+	line-height: 2em;
+
+
+	text-align: center;
+	justify-content: center;
+	align-self: center;
+
+	cursor: crosshair;
+
+}
+
+.page-7 div {
+	margin-top: 20%;
+}
+
+
+.animate-flicker {
+   -webkit-animation: flickerAnimation 8s infinite;
+   -moz-animation: flickerAnimation 8s infinite;
+   -o-animation: flickerAnimation 8s infinite;
+    animation: flickerAnimation 8s infinite;
+}
+
+
+
+
+
+
+
+
