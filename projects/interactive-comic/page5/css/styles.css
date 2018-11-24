@@ -1,0 +1,63 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+
+	flex-basis: auto;
+	flex-grow: 1;
+	width: 76%;
+	margin-top: 2%;
+	margin-left: 20%;
+	
+
+
+}
+.main-image {
+	width: 76%;
+}
+
+body img {
+	width: 100%;
+}
+
+.arrow {
+
+	width: 2%;
+	margin-top: 30%;
+	margin-left: 2%;
+}
+
+@font-face {
+    font-family: markerFelt;
+    src: url(../resources/MarkerFelt.ttc);
+}
+
+.textbox {
+	position: fixed;
+	background-color: rgb(40,40,40);
+	width: 30%;
+	left: 47%;
+	top: 70%;
+	height: 10%;
+	z-index: 10;
+
+	
+	margin: 0;
+	padding: 0;
+}
+
+.textbox p {
+	padding-left: 5%;
+	line-height: 1.5em;
+	font-size: 20px;
+	text-align: left;
+	font-family: markerFelt;
+	color: white;
+	letter-spacing: 2px;
+}
+
+
+
