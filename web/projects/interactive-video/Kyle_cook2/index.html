@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Kyle's Cooking Page</title>
+</head>
+
+<body>
+
+<!-- video -->
+<video class="V" id="v0" preload="metadata" controls>
+  <source src="video/1.mp4" type="video/mp4">
+</video>
+<video class="V" id="v1" preload="metadata" controls>
+  <source src="video/2.mp4" type="video/mp4">
+</video>
+
+<!-- start -->
+<div class="start" onclick="playit(this)">
+  <h1>let's cook the pasta and finish the sauce</h1>
+  <p class="animate-flicker"><i>
+      click anywhere to continue
+    </i></p>
+</div>
+
+<!-- videos -->
+<video class="Vstuff" id="stuff03" preload="metadata" controls>
+  <source src="video/morechee.mp4" type="video/mp4">
+</video>
+
+<video class="Vstuff" id="m1" preload="metadata" controls>
+  <source src="video/milkncheese.mp4" type="video/mp4">
+</video>
+
+<video class="Vstuff" id="m2" preload="metadata" controls>
+  <source src="video/cheese.mp4" type="video/mp4">
+</video>
+
+<video class="Vstuff" id="s1" preload="metadata" controls>
+  <source src="video/final.mp4" type="video/mp4">
+</video>
+
+<!-- bar -->
+<div id="q1-container">
+  <div id="t1"><h1>add more cheese?</h1></div>
+
+  <div id="q1-row">
+    <div class="q1" id="c10" onclick="disappearBar1(this)">
+      <h4> yes</h4>
+    </div>
+    <div class="q1" id="c11" onclick="disappearBar1(this)">
+      <h4> no</h4>
+    </div>
+  </div>
+</div>
+
+<div id="q2-container">
+  <div id="t2"><h1>should we add more milk and cheese or just cheese?</h1></div>
+
+  <div id="q2-row">
+    <div class="q2" id="c20" onclick="disappearBar2(this)">
+      <h4> milk and cheese</h4>
+    </div>
+
+    <div class="q2" id="c21" onclick="disappearBar2(this)">
+     <h4> cheese</h4>
+    </div>
+  </div>
+</div>
+
+
+<div id="success" class="footer" onclick="window.location.href='../home/index.html'">
+      <div class="subtitle">
+        <h1>
+          great!
+        </h1>
+        <h4>
+          it tastes just like how mom used to make it
+        </h4>
+        <p class="animate-flicker">
+          <i>
+            click to view someone else's memory lane
+          </i>
+        </p>
+    </div>
+</div>
+
+<div id="failure" class="footer">
+      <div class="subtitle">
+       <h1 id="f"></h1>
+
+       <div">
+        <div class="choice" onclick="window.location.href='../Kyle_cook2/index.html'">
+           <p> try again on my own</p>
+        </div>
+        <div class="choice" onclick="window.location.href='../Kyle_mom/index.html'">
+         <p> contact mom for help</p>
+        </div>
+        <div class="choice" onclick="window.location.href='../home/index.html'">
+         <p> give up and check out the other timelines</p>
+        </div>
+      </div>
+    </div>
+</div>
+
+</body>
+<script src="js/script.js" type="text/javascript">
+</script>
+</html>
