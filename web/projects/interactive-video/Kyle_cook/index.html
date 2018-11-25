@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Kyle's Cooking Page</title>
+</head>
+
+<body>
+
+  <!-- video -->
+  <video class="Vmeat" id="meat0" preload="metadata" controls>
+    <source src="video/boil.mp4" type="video/mp4">
+    </video>
+    <video class="Vmeat" id="meat1" preload="metadata" controls>
+      <source src="video/buttertime.mp4" type="video/mp4">
+      </video>
+
+      <div class="start" onclick="playit(this)">
+        <h1>let's boil the water and melt the butter</h1>
+        <p class="animate-flicker">
+          <i>
+          click anywhere to continue
+        </i>
+      </p>
+      </div>
+
+      <!-- bar -->
+      <div id="sea-container">
+
+        <div id="t"><h2>What what would mom add to the butter?</h2></div>
+
+        <div id="sea-row">
+          <div class="seabox" id="g0">
+            <img class="seasoning" id="i0" src="image/salt.jpg">
+          </div>
+
+          <div class="seabox" id="g1">
+            <img class="seasoning" id="i1" src="image/ginger_water.png">
+          </div>
+        </div>
+        <div id="add"><p>finish adding seasonings</p></div>
+
+      </div>
+
+
+      <!-- videos -->
+      <video class="Vsea" id="meatSalt" preload="metadata" controls>
+        <source src="video/mix_meat_salt.mp4" type="video/mp4">
+        </video>
+
+        <video class="Vsea" id="meatGinger" preload="metadata" controls>
+          <source src="video/mix_meat_ginger_water.mp4" type="video/mp4">
+          </video>
+
+
+<!-- <div id="success" class="footer" class="animate-flicker" onclick="window.location.href='../Jenny_cook/index.html'">
+      <div class="subtitle">
+       <h1>
+         Yum! it tastes like mom's wonton!
+       </h1>
+
+       <div class="animate-flicker">
+        <div class="choice" onclick="window.location.href='../home/index.html'">
+          check out the other timelines
+        </div>
+        <div class="choice" onclick="window.location.href='../Jenny/index.html'">
+          play again
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div id="failure" class="footer">
+    <div class="subtitle">
+     <h1 id="f"></h1>
+
+     <div >
+      <div class="choice" onclick="window.location.href='../Kyle_cook/index.html'">
+        <p>try again on my own</p>
+      </div>
+      <div class="choice" onclick="window.location.href='../Kyle_mom/index.html'">
+        <p>contact mom for help</p>
+      </div>
+      <div class="choice" onclick="window.location.href='../home/index.html'">
+        <p>give up and check out the other timelines</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+<script src="js/script.js" type="text/javascript">
+</script>
+</html>
