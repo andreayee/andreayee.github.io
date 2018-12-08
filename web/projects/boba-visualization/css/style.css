@@ -81,7 +81,9 @@ canvas {
 
 }
 
-
+.text img {
+	z-index: 20;
+}
 
 .title, .text {
 	width: 40%;
@@ -103,12 +105,13 @@ canvas {
 	text-align: center;
 }
 
-.indiv-chart {
+.one-half-chart {
 	display: flex;
 	flex-direction: column;
 	padding: none;
 	/*width: 50%;*/
-	height: 100%;
+	width: auto;
+	height: 80%;
 }
 
 .single-page-chart {

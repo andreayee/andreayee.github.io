@@ -157,7 +157,7 @@ var myBarChart = new Chart(toppingspreferred, {
 
 
 
-// topping chart
+// sugar/ice chart
 
 var popCanvas = document.getElementById("sugariceChart");
 
@@ -289,7 +289,7 @@ var bubbleChart = new Chart(popCanvas, {
 
 
 
-// teabase preferences donut chart
+// tea base preferences donut chart
 
 var teapreferences = document.getElementById('teaChart');
 
@@ -412,8 +412,8 @@ flavorData = {
 
 
 // And for a doughnut chart
-var myDoughnutChart = new Chart(flavorpreferences, {
-    type: 'doughnut',
+var myBarChart = new Chart(flavorpreferences, {
+    type: 'horizontalBar',
     data: flavorData,
 });
 
