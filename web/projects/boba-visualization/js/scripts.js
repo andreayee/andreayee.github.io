@@ -22,8 +22,10 @@ $(window).on("load",function() {
 
 
 
-window.onload = 
-document.getElementById("wave-holder").style.zIndex = 0;
+window.onload = document.getElementById("wave-holder").style.zIndex = 0;
+
+
+
 
 
 
@@ -36,8 +38,12 @@ window.addEventListener("click", function(event) {
 
 
 
-  document.getElementById("wave-holder").style.visibility = "block";
+  document.getElementById("wave-holder").style.display = "block";
   document.getElementById("wave-holder").style.zIndex = 4;
+
+
+
+
 
 
 
@@ -45,20 +51,23 @@ window.addEventListener("click", function(event) {
 
 function showMap() {
    document.getElementById("mapbox").style.display = 'none';
+   
+   var x = document.getElementsByClassName(".i4ewOd-pzNkMb-haAclf");
+    var i;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
 }
 
-// custom boba stuff
-function showBoba() {
-    document.getElementById("boba-img").style.display = 'block';
-    document.getElementById("boba").style.backgroundColor = 'pink';
 
-}
 
-function showMiniBoba() {
-    document.getElementById("mini-boba-img").style.display = 'block';
-    document.getElementById("mini-boba").style.backgroundColor = 'pink';
 
-}
+
+
+
+
+
+
 
 
 

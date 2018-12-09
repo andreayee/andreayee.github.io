@@ -76,7 +76,7 @@ buyData = {
 };
 
 var myBarChart = new Chart(bobabuy, {
-    type: 'horizontalBar',
+    type: 'bar',
     data: buyData,
     // options: options
 });
@@ -379,6 +379,7 @@ var flavorpreferences = document.getElementById('flavorChart');
 
 flavorData = {
     datasets: [{
+        label: "Number of Respondents",
         backgroundColor: 'rgb(255, 99, 132)',
         borderColor: 'rgb(255, 255, 255)',
 
@@ -411,7 +412,7 @@ flavorData = {
 };
 
 
-// And for a doughnut chart
+
 var myBarChart = new Chart(flavorpreferences, {
     type: 'horizontalBar',
     data: flavorData,

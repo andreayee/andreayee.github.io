@@ -50,7 +50,7 @@
 
 			</div>
 
-			<h1>boballin' around the world</h1>
+			<h1 class="example" >boballin' around the world</h1>
 			<p> 
 				<a href="#explanation">what is boba</a> /
 				<a href="#anatomy">PMT anatomy</a> /
@@ -68,7 +68,6 @@
 
 
 		</div>
-
 
 		<div id="explanation" class="page">
 			<div class="title explanation-title">
@@ -99,7 +98,7 @@
 
 			</div>
 			<div class="text">
-				<img src="images/uwu-mt.png">
+				<img id="mt-anatomy" src="images/mt-anatomy.png">
 			</div>
 			
 		</div>
@@ -175,12 +174,23 @@
 
 
 		<div class="page" id="findings">
-			<!-- <div class="title"> -->
-				<h1>
-					our findings
-				</h1>
-			<!-- </div> -->
+
+			<h1>
+				our findings
+			</h1>
+
 		</div>
+
+		<div class="page map" id="map">
+			<div class="transparent-box" id="mapbox" onclick="showMap()">
+				<h3>click to interact with map</h3>
+
+			</div>
+			<iframe src="https://www.google.com/maps/d/u/1/embed?mid=15HSJJIoVLveImmjK6lEBjSs0mOPxtW4M">
+
+			</iframe>
+		</div>
+
 
 		<div class="page">
 			<div class="charts">
@@ -198,7 +208,7 @@
 					<canvas class="graph" id="bobaBuying"></canvas>
 				</div>
 
-				
+
 			</div>
 		</div>
 
@@ -215,8 +225,8 @@
 					</h1>
 					<canvas class="graph" id="sugariceChart"></canvas>
 				</div>
-				
-				
+
+
 			</div>
 		</div>
 
@@ -252,7 +262,7 @@
 			</div>
 		</div>
 
-				<div class="page">
+		<div class="page">
 			<div class="charts">
 
 				<div class="single-page-chart">
@@ -271,7 +281,7 @@
 			<h1>
 				create your own bubble tea!
 			</h1>
-	
+
 		</div>
 
 		<div class="page" id="custom-boba">
@@ -284,42 +294,40 @@
 					</h4>
 
 					<div class="choices">
-						<p>black tea</p>
-						<p>green tea</p>
-						<!-- <p>oolong tea</p> -->
-						<p>matcha</p>
+						<p class="tea-choice" id="black-tea" onclick="showBlackTea()">black tea</p>
+						<p class="tea-choice" id="green-tea" onclick="showGreenTea()">green tea</p>
+						<p class="tea-choice" id="matcha-tea" onclick="showMatchaTea()">matcha</p>
 					</div>
 					<div class="choices">
-						<p>thai tea</p>
-						<!-- <p>pu-erh tea</p> -->
-						<p>slush (no tea)</p>
+						<p class="tea-choice" id="thai-tea" onclick="showThaiTea()">thai tea</p>
+						<p class="tea-choice" id="slush" onclick="showSlush()">slush (no tea)</p>
 					</div>
 					<h4>
 						flavors
 					</h4>
 					<div class="choices">
-						<p>original flavor</p>
-						<p>taro</p>
-						<p>yakult</p>
-						<p>honey</p>
+						<p class="flavor-choice" id="original-flavor" onclick="showOriginalFlavor()">original flavor</p>
+						<p class="flavor-choice" id="taro-flavor" onclick="showTaroFlavor()">taro</p>
+						<p class="flavor-choice" id="yakult-flavor" onclick="showYakultFlavor()">yakult</p>
+						<p class="flavor-choice" id="honey-flavor" onclick="showHoneyFlavor()">honey</p>
 					</div>
 					<div class="choices">
-						<p>brown sugar</p>
-						<p>toffee/caramel</p>
-						<p>mango</p>
-						<p>strawberry</p>
+						<p class="flavor-choice" id="brown-sugar-flavor" onclick="showBrownSugarFlavor()">brown sugar</p>
+						<p class="flavor-choice" id="toffee-flavor" onclick="showToffeeFlavor()">toffee/caramel</p>
+						<p class="flavor-choice" id="mango-flavor" onclick="showMangoFlavor()">mango</p>
+						<p class="flavor-choice" id="strawberry-flavor" onclick="showStrawberryFlavor()">strawberry</p>
 					</div>
 					<div class="choices">
-						<p>passionfruit</p>
-						<p>citrus/pomelo/grapefruit</p>
-						<p>rose</p>
+						<p class="flavor-choice" id="Passionfruit-flavor" onclick="showPassionfruitFlavor()">passionfruit</p>
+						<p class="flavor-choice" id="citrus-flavor" onclick="showCitrusFlavor()">citrus/pomelo/grapefruit</p>
+						<p class="flavor-choice" id="rose-flavor" onclick="showRoseFlavor()">rose</p>
 
 					</div>
 					<div class="choices">
-						<p>wintermelon</p>
-						<p>lychee</p>
-						<p>kiwi</p>
-						<p>peach</p>
+						<p class="flavor-choice" id="wintermelon-flavor" onclick="showWintermelonFlavor()">wintermelon</p>
+						<p class="flavor-choice" id="lychee-flavor" onclick="showLycheeFlavor()">lychee</p>
+						<p class="flavor-choice" id="kiwi-flavor" onclick="showKiwiFlavor()">kiwi</p>
+						<p class="flavor-choice" id="peach-flavor" onclick="showPeachFlavor()">peach</p>
 					</div>
 
 					<h4>
@@ -327,7 +335,7 @@
 					</h4>
 
 					<div class="choices">
-						<p class="topping" id="no-topping">no toppings</p>
+						<p class="topping" id="no-topping" onclick="noToppings()">no toppings</p>
 
 						<p class="topping" id="boba" onclick="showBoba()">
 							boba
@@ -336,35 +344,35 @@
 						<p class="topping" id="mini-boba" onclick="showMiniBoba()">
 							mini boba
 						</p>
-						<p class="topping" id="agar-boba">agar boba</p>
+						<p class="topping" id="agar-boba" onclick="showAgarBoba()">agar boba</p>
 					</div>
 					<div class="choices">
-						<p class="topping" id="popping-boba">popping boba</p>
-						<p class="topping" id="red-bean">red bean</p>
-						<p class="topping" id="fresh-taro">fresh taro</p>
-						<p class="topping" id="coconut-jelly">coconut jelly</p>
+						<p class="topping" id="popping-boba" onclick="showPoppingBoba()">popping boba</p>
+						<p class="topping" id="red-bean" onclick="showRedBean()">red bean</p>
+						<p class="topping" id="fresh-taro" onclick="showFreshTaro()">fresh taro</p>
+						<p class="topping" id="coconut-jelly" onclick="showCoconutJelly()">coconut jelly</p>
 					</div>
 					<div class="choices">
-						<p class="topping" id="rainbow-jelly">rainbow jelly</p>
-						<p class="topping" id="lychee-jelly">lychee jelly</p>
-						<p class="topping" id="passionfruit-jelly">passionfruit jelly</p>
-						<p class="topping" id="mango-jelly">mango jelly</p>
+						<p class="topping" id="rainbow-jelly" onclick="showRainbowJelly()">rainbow jelly</p>
+						<p class="topping" id="lychee-jelly" onclick="showLycheeJelly()">lychee jelly</p>
+						<p class="topping" id="passionfruit-jelly" onclick="showPassionfruitJelly()">passionfruit jelly</p>
+						<p class="topping" id="mango-jelly" onclick="showMangoJelly()">mango jelly</p>
 					</div>
 					<div class="choices">
-						<p class="topping" id="coffee-jelly">coffee jelly</p>
-						<p class="topping" id="aloe-vera">aloe vera</p>
-						<p class="topping" id="grass-jelly">grass jelly</p>
-						<p class="topping" id="mango-pudding">mango pudding</p>
+						<p class="topping" id="coffee-jelly" onclick="showCoffeeJelly()">coffee jelly</p>
+						<p class="topping" id="aloe-vera" onclick="showAloeVera()">aloe vera</p>
+						<p class="topping" id="grass-jelly" onclick="showGrassJelly()">grass jelly</p>
+						<p class="topping" id="mango-pudding" onclick="showMangoPudding()">mango pudding</p>
 					</div>
 					<div class="choices">
-						<p class="topping" id="egg-pudding">egg pudding</p>
-						<p class="topping" id="tofuhua">tofuhua</p>
-						<p class="topping" id="basil-seeds">basil seeds</p>
-						<p class="topping" id="ice-cream">ice cream</p>
+						<p class="topping" id="egg-pudding" onclick="showEggPudding()">egg pudding</p>
+						<p class="topping" id="tofuhua" onclick="showTofuhua()">tofuhua</p>
+						<p class="topping" id="basil-seeds" onclick="showBasilSeeds()">basil seeds</p>
+						<p class="topping" id="ice-cream" onclick="showIceCream()">ice cream</p>
 					</div>
 					<div class="choices">
-						<p class="topping" id="milk-foam">milk foam</p>
-						<p class="topping" id="salted-cheese">salted cheese</p>
+						<p class="topping" id="milk-foam" onclick="showMilkFoam()">milk foam</p>
+						<p class="topping" id="salted-cheese" onclick="showSaltedCheese()">salted cheese</p>
 
 					</div>
 
@@ -378,17 +386,49 @@
 				<div class="results">
 					<img src="images/diyboba/boba-cup.png">
 
-					<img src="images/diyboba/black-tea.png">
+
+					<!-- tea images -->
+					<img class="tea-img" id="black-tea-img" src="images/diyboba/black-green-tea.png">
+
+					<img class="tea-img" id="green-tea-img" src="images/diyboba/black-green-tea.png">
+
+					<img class="tea-img" id="matcha-tea-img" src="images/diyboba/matcha-tea.png">
+
+					<img class="tea-img" id="thai-tea-img" src="images/diyboba/thai-tea.png">
+
+					<img class="tea-img" id="slush-img" src="images/diyboba/slush.png">
+
+
+
+
+
+					<!-- flavors -->
+					<img class="tea-img" id="taro-flavor-img" src="images/diyboba/taro-tea.png">
+
+					<img class="tea-img" id="strawberry-flavor-img" src="images/diyboba/rose-strawberry-tea.png">	
+
+					<img class="tea-img" id="rose-flavor-img" src="images/diyboba/rose-strawberry-tea.png">			
+
+					<img class="tea-img" id="kiwi-flavor-img" src="images/diyboba/kiwi-tea.png">
+
+
+
+
+
 					<img src="images/diyboba/straw.png">
 
-					<img class="topping-img" id="taro-img" src="images/diyboba/taro.png">
 
+
+
+					<!-- topping images -->
+					<img class="topping-img" id="fresh-taro-img" src="images/diyboba/taro.png">
 					<img class="topping-img" id="red-bean-img" src="images/diyboba/red-bean.png">
-					<img class="topping-img" id="coco-lychee-jelly-img" src="images/diyboba/coco-lychee-jelly.png">
-					<img class="topping-img" id="mango-pf-jelly-img" src="images/diyboba/mango-pf-jelly.png">
+
+					<img class="topping-img" id="coconut-lychee-jelly-img" src="images/diyboba/coco-lychee-jelly.png">
+					<img class="topping-img" id="mango-passionfruit-jelly-img" src="images/diyboba/mango-pf-jelly.png">
 					<img class="topping-img" id="coffee-jelly-img" src="images/diyboba/coffee-jelly.png">
 
-					<img class="topping-img" id="aloe-img" src="images/diyboba/aloe.png">
+					<img class="topping-img" id="aloe-vera-img" src="images/diyboba/aloe.png">
 					<img class="topping-img" id="grass-jelly-img" src="images/diyboba/grass-jelly.png">
 
 					<img class="topping-img" id="mango-pudding-img" src="images/diyboba/mango-pudding.png">
@@ -398,7 +438,7 @@
 					<img class="topping-img" id="rainbow-jelly-img" src="images/diyboba/rainbow-jelly.png">
 
 
-					<img class="topping-img" id="basil-seed-img" src="images/diyboba/basil-seed.png">
+					<img class="topping-img" id="basil-seeds-img" src="images/diyboba/basil-seed.png">
 
 
 
@@ -413,11 +453,15 @@
 
 					<img class="topping-img" id="salted-cheese-img"src="images/diyboba/salted-cheese.png">
 
-					<img class="topping-img" id="ice-cream-img"src="images/diyboba/ice-cream-top.png">
+					<img class="topping-img" id="ice-cream-base-img"src="images/diyboba/ice-cream-base.png">
+
+
 
 					<img src="images/diyboba/lid.png">
 
-					<img class="topping-img" id="ice-cream-img"src="images/diyboba/ice-cream-base.png">
+					<img class="topping-img" id="ice-cream-top-img"src="images/diyboba/ice-cream-top.png">
+
+
 
 
 
@@ -434,29 +478,95 @@
 		</div>
 
 
-		<div id="boba-personality" class="page">
-			<h1>
-				what does your choice in bubble tea say about you?
-			</h1>
-
-		</div>
-
-
-
-
-
-		<div class="page map" id="map">
-			<div class="transparent-box" id="mapbox" onclick="showMap()">
-				<h3>click to interact with map</h3>
-
+		<div id="boba-personality" class="page personality">
+			<div>
+				<h1>
+					what does your choice in bubble tea say about you?
+				</h1>
 			</div>
-			<iframe src="https://www.google.com/maps/d/u/1/embed?mid=15HSJJIoVLveImmjK6lEBjSs0mOPxtW4M">
-
-			</iframe>
-
-
-
 		</div>
+
+		<div class="page personality">
+
+			<div class="personality-test-row">
+				<div class="personality-box">
+					<img src="images/boba-orders/coffee-mt.png">
+				</div>
+				<div class="personality-box">
+					<img src="images/boba-orders/fruity-t.png">
+				</div>
+				<div class="personality-box">
+					<img src="images/boba-orders/hazelnut-mt.png">
+				</div>
+				<div class="personality-box">
+					<img src="images/boba-orders/hokkaido-mt.png">
+				</div>
+				<div class="personality-box">
+					<img src="images/boba-orders/honeydew-t.png">
+				</div>
+			</div>
+			<div class="personality-test-row">
+				<div class="personality-box">
+					<img src="images/boba-orders/jasmine-mt.png">
+				</div>
+				<div class="personality-box">
+					<img src="images/boba-orders/lavender-mt.png">
+				</div>
+				<div class="personality-box">
+					<img src="images/boba-orders/lychee-slush.png">
+				</div>
+				<div class="personality-box">
+					<img src="images/boba-orders/mango-slush.png">
+				</div>
+				<div class="personality-box">
+					<img src="images/boba-orders/matcha-mt.png">
+				</div>
+			</div>
+			<div class="personality-test-row"> 
+				<div class="personality-box">
+					<img src="images/boba-orders/okinawa-mt.png">
+				</div>
+				<div class="personality-box">
+					<img src="images/boba-orders/oolong-mt.png">
+				</div>
+				<div class="personality-box">
+					<img src="images/boba-orders/passionfruit-slush.png">
+				</div>
+				<div class="personality-box">
+					<img src="images/boba-orders/rose-mt.png">
+				</div>	
+				<div class="personality-box">
+					<img src="images/boba-orders/strawberry-slush.png">
+				</div>
+			</div>
+			<div class="personality-test-row">
+				<div class="personality-box">
+					<img src="images/boba-orders/taro-mt.png">
+				</div>
+				<div class="personality-box">
+					<img src="images/boba-orders/thai-mt.png">
+				</div>
+				<div class="personality-box">
+					<img src="images/boba-orders/tiger-mt.png">
+				</div>
+				<div class="personality-box">
+					<img src="images/boba-orders/wintermelon-mt.png">
+				</div>	
+				<div class="personality-box">
+					<img src="images/boba-orders/uwu-mt.png">
+				</div>
+			</div>
+		</div>
+
+		<div class="page">
+			
+		</div>
+
+
+
+
+
+
 
 
 
@@ -471,6 +581,9 @@
 
 
 	<script src="js/scripts.js" charset="utf-8"></script>
+	<script src="js/customboba.js" charset="utf-8"></script>
+	<script src="js/bobapersonality.js" charset="utf-8"></script>
+
 	<script src="js/bobacharts.js" charset="utf-8"></script>
 
 

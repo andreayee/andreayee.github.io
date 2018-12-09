@@ -25,7 +25,7 @@ html, body {
 
 
 .fade {
-  opacity: 0;
+  opacity: 1;
 }
 
 .container {
@@ -81,9 +81,7 @@ canvas {
 
 }
 
-.text img {
-	z-index: 20;
-}
+
 
 .title, .text {
 	width: 40%;
@@ -93,46 +91,9 @@ canvas {
 	z-index: 6;
 }
 
-.charts {
-	display: flex;
-	flex-direction: row;
 
-	width: 100%;
-	height: 100%;
 
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-}
 
-.one-half-chart {
-	display: flex;
-	flex-direction: column;
-	padding: none;
-	/*width: 50%;*/
-	width: auto;
-	height: 80%;
-}
-
-.single-page-chart {
-	display: flex;
-	flex-direction: column;
-	width: 80%;
-	height: auto;
-}
-
-.one-third-chart {
-	display: flex;
-	flex-direction: column;
-	width: 30%;
-	height: auto;
-}
-
-.choices {
-	display: flex;
-	flex-direction: row;
-	text-align: left;
-}
 
 #titlepage {
 
@@ -198,6 +159,15 @@ canvas {
 
 }
 
+#mt-anatomy {
+	width: 100%;
+	height: auto;
+	z-index: 20;
+	/*display: flex;*/
+	/*position: relative;*/
+	/*top: 0;*/
+}
+
 #history {
 	height: 300%;
 	background-color: rgba(255,215,200,1);
@@ -228,11 +198,57 @@ canvas {
 	align-items: center;
 }
 
+.charts {
+	display: flex;
+	flex-direction: row;
+
+	width: 100%;
+	height: 100%;
+
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.one-half-chart {
+	display: flex;
+	flex-direction: column;
+	padding: none;
+	width: auto;
+	height: 80%;
+}
+
+.single-page-chart {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	height: auto;
+}
+
+.one-third-chart {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	height: auto;
+}
 
 
 .graph {
 	display: flex;
 	position: relative;
+}
+
+.choices {
+	display: flex;
+	flex-direction: row;
+	text-align: left;
+}
+
+#custom-boba {
+	width: 100%;
+	height: 200%;
+	display: flex;
+
 }
 
 .bobaorder {
@@ -272,6 +288,10 @@ canvas {
 display: none;
 }
 
+.tea-img {
+	display: none;
+}
+
 
 .results {
 	width: 60%;
@@ -286,6 +306,66 @@ display: none;
 	position: absolute;
 	top: 0;
 }
+
+
+
+
+
+.personality {
+	display: flex;
+	flex-direction: column;
+	/*width: 100%;*/
+	/*height: 100%;*/
+
+	position: relative;
+
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+
+
+.personalilty div {
+	display: flex;
+	top: 0;
+	position: relative;
+}
+
+.personality-test-row {
+	display: flex;
+	width: 80%;
+	height: auto;
+	left: 10%;
+
+	align-items: center;
+	justify-content: center;
+
+	margin: 2.5% 0 2.5% 0;
+}
+.personality-test-row div {
+	background-color: pink;
+	height: 200px;
+	width: 200px;
+	margin: 0 .5% 0 .5%;
+	padding: .5%;
+
+}
+
+.personality-test-row div:hover {
+	background-color: white;
+	cursor: pointer;
+}
+
+.personality-box img {
+	/*background-color: pink;*/
+	width: auto;
+	height: 100%
+	/*width: 100px;*/
+	/*margin: 2.5%;*/
+	/*padding: 2.5%;*/
+}
+
 
 
 
@@ -339,9 +419,10 @@ iframe {
 
 
 
-div .i4ewOd-pzNkMb-haAclf {
+iframe #document .i4ewOd-haAclf .i4ewOd-pzNkMb-haAclf {
 	display: none;
 	background-color: transparent;
+	visibility: hidden;
 
 
 }
