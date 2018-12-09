@@ -27,9 +27,9 @@ html, body {
 }
 
 
-.fade {
+/*.fade {
   opacity: 0;
-}
+}*/
 
 .container {
 	height: 100%;
@@ -463,7 +463,7 @@ iframe {
 	display: flex;
 	position: absolute;
 	top: 0;
-	background-color: rgba(255,255,255,.7);
+	background-color: rgba(255,255,255,.3);
 	z-index: 2;
 
 	justify-content: center;
@@ -472,9 +472,9 @@ iframe {
 
 }
 
-.transparent-box:hover {
+/*.transparent-box:hover {
 	opacity: .5;
-}
+}*/
 
 
 .map-text {
