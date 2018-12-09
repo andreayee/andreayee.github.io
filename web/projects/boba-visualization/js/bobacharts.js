@@ -398,7 +398,7 @@ flavorData = {
     'Mango',
     'Strawberry',
     'Passionfruit',
-    'Citrus (Lemon/Pomelo/Grapefruit/Kumquat',
+    'Citrus',
     'Rose',
     'Wintermelon',
     'Lychee',

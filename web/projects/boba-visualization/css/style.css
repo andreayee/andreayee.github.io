@@ -38,16 +38,21 @@ html, body {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-	width: 80%;
+
+	width: 90%;
 	padding: 5%;
 	margin: 0;
+	margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 
 }
 
 
 nav {
 	list-style: none;
-	background-color: pink;
+	background-color: #ffe9df;
 
 	top: 0;
 	width: 100%;
@@ -202,20 +207,44 @@ canvas {
 	display: flex;
 	flex-direction: row;
 
-	width: 100%;
+	width: 80%;
 	height: 100%;
+
+	left: 10%;
+	right: 10%;
 
 	align-items: center;
 	justify-content: center;
-	text-align: center;
+	/*text-align: center;*/
 }
 
-.one-half-chart {
+.chart-text-left {
+	width: 66%;
+	/*text-align: left;*/
+	padding: 2.5%;
+	margin: 0;
+}
+
+.chart-text-right {
+	width: 33%;
+	padding: 2.5%;
+	margin: 0;
+}
+
+.two-thirds-chart {
+	width: 66%;
+	height: auto;
+	padding: 2.5%;
+}
+
+.one-fifth-chart {
 	display: flex;
 	flex-direction: column;
-	padding: none;
-	width: auto;
-	height: 80%;
+	/*padding: none;*/
+	width: 20%;
+	height: auto;
+
+	text-align: center;
 }
 
 .single-page-chart {
@@ -228,8 +257,9 @@ canvas {
 .one-third-chart {
 	display: flex;
 	flex-direction: column;
-	width: 30%;
+	width: 33%;
 	height: auto;
+	padding: 2.5%;
 }
 
 
@@ -274,7 +304,7 @@ canvas {
 
 .order p:hover {
 	/*background-color: rgba(253,242,230,1);*/
-	border: dotted pink;
+	border: dotted #ffe9df;
 }
 
 .order p:visited {
@@ -344,7 +374,7 @@ display: none;
 	margin: 2.5% 0 2.5% 0;
 }
 .personality-test-row div {
-	background-color: pink;
+	background-color: #ffe9df;
 	height: 200px;
 	width: 200px;
 	margin: 0 .5% 0 .5%;
@@ -358,7 +388,7 @@ display: none;
 }
 
 .personality-box img {
-	/*background-color: pink;*/
+	/*background-color: #ffe9df;*/
 	width: auto;
 	height: 100%
 	/*width: 100px;*/
@@ -413,7 +443,7 @@ iframe {
 }
 
 .transparent-box:hover {
-	opacity: 0;
+	opacity: .5;
 }
 
 
