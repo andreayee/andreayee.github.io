@@ -29,6 +29,15 @@ html, body {
 
 }
 
+#wave-holder {
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	display: flex;
+	z-index: -10;
+
+}
+
 
 /*.fade {
   opacity: 0;
@@ -40,6 +49,7 @@ html, body {
 
 	overflow-y: scroll;
  	scroll-behavior: smooth;
+ 	/*display: flex;*/
  	/*z-index: 5;*/
 }
 
@@ -58,7 +68,7 @@ h1, h2, h3, h4, h5, h6,  {
 
 p {
 	width: 90%;
-	padding: 5%;
+	padding: 5% 5% 5% 0;
 	margin: 0;
 	margin-block-start: 0;
     margin-block-end: 0;
@@ -67,18 +77,64 @@ p {
     font-family: 'helvetica', sans-serif;
 }
 
+a:active, a:visited {
+	color: white;
+	text-decoration: none;
+	text-decoration-line: none;
+}
 
+a:hover {
+	color: #523800;
+}
+
+
+
+a {
+	text-decoration: none;
+	text-decoration-line: none;
+}
 nav {
-	list-style: none;
-	/*background-color: #ffe9df;*/
 
-	top: 0;
-	width: 100%;
+	display: flex;
+	flex-direction: column;
 
-	position: relative;
-	display: none;
+	list-style-type: circle;
+	text-decoration: none;
+	text-decoration-line: none;
 
-	z-index: 8;
+	
+
+	top: 10%;
+	left: 2.5%;
+	width: 7%;
+	height: 100%;
+
+	position: fixed;
+	display: flex;
+
+	z-index: 20;
+
+	/*list-style-position: inside;*/
+
+	font-size: 8pt;
+	color: white;
+	list-style-position: outside;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	
+	margin: 10px 0 10px 0;
+
+}
+
+nav li:hover {
+	background-color: rgba(255,255,255,.5);
+	color: #523800;
 }
 
 canvas {
@@ -104,8 +160,13 @@ canvas {
 	align-items: center;
 	justify-content: center;
 	flex-direction: row;
-	z-index: 6;
+	z-index: 9;
 
+}
+
+
+.page h1, p {
+	z-index: 10;
 }
 
 
@@ -142,49 +203,22 @@ canvas {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	z-index: 6;
+	/*z-index: 6;*/
 
-}
-
-
-.titlepage h1 {
-	z-index: 8;
-}
-
-#wave-holder {
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	display: flex;
-	z-index: -10;
-
-}
-
-#titlepage h1 {
-	z-index: 10;
 }
 
 #explanation {
 
-
-	/*background-color: rgba(255,215,200,1);*
-	/*background-color: white;*/
 	align-items: flex-start;
 	justify-content: center;
 
 	height: 100%;
-
-	/*background-image: url('../images/bubbletea.png');*/
-	background-attachment: fixed;
-    background-position: center;
-    background-repeat: repeat;
-    /*background-size: cover;*/
 }
 
 
 .explanation-title {
 	height: 20%;
-	/*background-color: white;*/
+
 
 	position: relative;
 	top: 5%;
@@ -193,7 +227,6 @@ canvas {
 
 .explanation-text {
 	height: 50%;
-	/*background-color: white;*/
 
 	position: relative;
 	top: 5%;
@@ -209,42 +242,38 @@ canvas {
 	width: 100%;
 	height: auto;
 	z-index: 20;
-	/*display: flex;*/
-	/*position: relative;*/
-	/*top: 0;*/
+
 }
 
 #history {
 	height: 150%;
-	/*background-color: rgba(255,215,200,1);*/
+
 	align-items: flex-start;
 
 }
  
 .history-title {
-	/*background-color: white;*/
+
 	height: 5%;
 	position: relative;
 	top: 10%;
 }
 
 .history-text {
-	/*background-color: white;*/
+
 	height: 40%;
 	position: relative;
 	top: 10%;
 }
 
 
-.findings {
-	z-index: 7;
-}
+
 
 #findings {
 	text-align: center;
 	justify-content: center;
 	align-items: center;
-	z-index: 6;
+
 }
 
 .charts-page {
@@ -334,7 +363,7 @@ canvas {
 
 #custom-boba {
 	width: 100%;
-	height: 100%;
+	height: 125%;
 	display: flex;
 	z-index: 10;
 
@@ -399,6 +428,10 @@ display: none;
 	top: 0;
 }
 
+#resetMT p {
+	width: 100%;
+	text-align: center;
+}
 
 
 
@@ -530,9 +563,7 @@ iframe #document .i4ewOd-haAclf .i4ewOd-pzNkMb-haAclf {
 
 }
 
-.create {
-	z-index: 6;
-}
+
 
 .personality-result-page {
 	display: flex;
@@ -547,12 +578,14 @@ iframe #document .i4ewOd-haAclf .i4ewOd-pzNkMb-haAclf {
 .personality-result {
 	display: flex;
 	flex-direction: column;
-	left: 10%;
+	left: 7.5%;
 
 	width: 80%;
-	height: 30%;
+	height: 20%;
 
-	background-color: white;
+	/*padding: 2.5%;*/
+
+	background-color: #ffe9df;
 
 	justify-content: center;
 	align-items: center;
@@ -561,19 +594,25 @@ iframe #document .i4ewOd-haAclf .i4ewOd-pzNkMb-haAclf {
 	top: 30%;
 
 	display: none;
+	text-align: center;
+	padding: 2.5%;
 	
 }
 
-.personality-result h1 {
+.personality-result p {
 	text-align: center;
+	padding: 2.5%;
+	
 }
 
-.reset {
-	background-color: white;
+.result-reset {
+	background-color: #ffe9df;
 
 	width: 10%;
 	left: 45%;
 	height: 7%;
+
+
 	
 
 	text-align: center;
@@ -588,6 +627,12 @@ iframe #document .i4ewOd-haAclf .i4ewOd-pzNkMb-haAclf {
 	display: none;
 
 }
+
+.result-reset:hover {
+	background-color: white;
+}
+
+
 
 
 

@@ -20,23 +20,54 @@
 
 <body>
 	<div class="container" id="container">
-		<div class="nav">
+
 			<nav>
+				<h3>navigation</h3>
 				<ul>
 					<li>
 						<p>
-							home
+							<a href="#explanation">what is boba</a>
 						</p>
 					</li>
 					<li>
 						<p>
-							about
+							<a href="#anatomy">PMT anatomy</a>
+						</p>
+					</li>	
+					<li>
+						<p>
+							<a href="#history">history</a>
+						</p>
+					</li>
+					<li>
+						<p>
+							<a href="#about">about</a>
+						</p>
+					</li>
+					<li>
+						<p>
+							<a href="#findings">findings</a>
+						</p>
+					</li>
+					<li>
+						<p>
+							<a href="#map-page">map</a>
+						</p>
+					</li>
+					<li>
+						<p>
+							<a href="#custom-boba">customize boba</a>
+						</p>
+					</li>
+					<li>
+						<p>
+							<a href="#boba-personality">personality test</a>
 						</p>
 					</li>
 				</ul>
 			</nav>
 
-		</div>
+
 
 
 
@@ -45,29 +76,12 @@
 			
 		</div>
 
-		<div id="titlepage" class="titlepage">
+		<div id="titlepage" class=" page titlepage">
 			
 
 
 			<h1 class="example" >boballin' around the world</h1>
-			<p> 
-				<a href="#explanation">what is boba</a> /
-				<a href="#anatomy">PMT anatomy</a> /
-				<a href="#history">history</a> /
-				<a href="#about">about</a> /
-
-				<a href="#findings">findings</a> /
-				<a href="#map-page">map</a> / 
-
-				<a href="#custom-boba">customize boba</a> / 
-				<a href="#boba-personality">personality test</a> / 
-
-
-
-
-			</p>
-
-
+			<p><i>scroll down to continue</i></p>
 		</div>
 
 		<div id="explanation" class="page">
@@ -174,7 +188,7 @@
 
 
 
-		<div class="page findings titlepage" id="findings">
+		<div class="page titlepage" id="findings">
 
 			<h1>
 				our findings
@@ -194,17 +208,17 @@
 
 			<div class="map-text">
 
-			<h2>
-				map of our respondents
-			</h2>
-			<p>
+				<h2>
+					boba preferences across the globe
+				</h2>
+				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae gravida leo. Donec at lacinia justo, vitae pretium urna. Nulla ac ullamcorper ligula. Etiam ultrices euismod sem, nec rutrum nibh posuere quis. Phasellus aliquet ut tortor at euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum et ligula turpis. Cras placerat auctor lorem, eu molestie ex rutrum vel. Sed laoreet vulputate tristique. 
 				</p>
 			</div>
 
 
 
-				
+
 
 			
 		</div>
@@ -352,7 +366,7 @@
 		</div>
 
 
-		<div class="page create titlepage">
+		<div class="page titlepage">
 			<h1>
 				now that you know all about boba,  create your own bubble tea!
 			</h1>
@@ -365,7 +379,7 @@
 					<h2>boba customization</h2>
 
 					<h4>
-						tea base
+						tea base – choose one
 					</h4>
 
 					<div class="choices">
@@ -378,7 +392,7 @@
 						<p class="tea-choice" id="slush" onclick="showSlush()">slush (no tea)</p>
 					</div>
 					<h4>
-						flavors
+						flavors – choose one
 					</h4>
 					<div class="choices">
 						<p class="flavor-choice" id="original-flavor" onclick="showOriginalFlavor()">original flavor</p>
@@ -406,7 +420,7 @@
 					</div>
 
 					<h4>
-						toppings
+						toppings – choose as many as you want
 					</h4>
 
 					<div class="choices">
@@ -450,6 +464,12 @@
 						<p class="topping" id="salted-cheese" onclick="showSaltedCheese()">salted cheese</p>
 
 					</div>
+
+					<div class="choices" id="resetMT" onclick="resetMT()">
+						<p class="" ><b>reset</b></p>
+
+
+					</div>				
 
 
 
@@ -671,7 +691,7 @@
 					you are the softest of all asian girls. we have to protect you at all costs.
 				</p>
 			</div>
-					<div class="personality-result" id="lavender-mt-result">
+			<div class="personality-result" id="lavender-mt-result">
 				<h1>
 					lavender milk tea
 				</h1>
@@ -706,7 +726,7 @@
 					you wanna be healthy, but do you really wanna be healthy? you do all the right steps. read your horoscope. meditate to harness your chakras. you’re stressed but not enough to drastically change your lifestyle. this will do.
 				</p>
 			</div>
-						<div class="personality-result" id="honeydew-mt-result">
+			<div class="personality-result" id="honeydew-mt-result">
 				<h1>
 					honeydew milk tea
 				</h1>
@@ -741,7 +761,7 @@
 					you’re probably defensive. but for good reason. you’re afraid of change. you have a hard time trusting people. don’t be afraid to open up!
 				</p>
 			</div>
-					<div class="personality-result" id="hokkaido-mt-result">
+			<div class="personality-result" id="hokkaido-mt-result">
 				<h1>
 					hokkaido milk tea
 				</h1>
@@ -814,7 +834,7 @@
 
 
 
-			<div class="reset" id="reset-test" onclick="resetTest()">
+			<div class="result-reset" id="result-reset" onclick="resetTest()">
 				<h3>reset</h3>
 			</div>		
 		</div>
@@ -826,8 +846,8 @@
 
 
 
-<div id="wave-holder">
-			</div>
+		<div id="wave-holder">
+		</div>
 
 
 

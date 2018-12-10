@@ -1,5 +1,52 @@
+function resetMT() {
 
 
+var teaImg = document.getElementsByClassName("tea-img");
+
+
+  var i;
+  for (i = 0; i < teaImg.length; i++) {
+    teaImg[i].style.display = "none";
+  }
+
+var toppingImg = document.getElementsByClassName("topping-img");
+
+
+  var i;
+  for (i = 0; i < toppingImg.length; i++) {
+    toppingImg[i].style.display = "none";
+  }
+
+
+var buttons = document.getElementsByClassName("tea-choice");
+
+
+  var i;
+  for (i = 0; i < buttons.length; i++) {
+    buttons[i].style.backgroundColor = "white";
+  }
+
+var flavorChoice = document.getElementsByClassName("flavor-choice");
+
+
+  var i;
+  for (i = 0; i < flavorChoice.length; i++) {
+    flavorChoice[i].style.backgroundColor = "white";
+  }
+
+var toppingChoice = document.getElementsByClassName("topping");
+
+
+  var i;
+  for (i = 0; i < toppingChoice.length; i++) {
+    toppingChoice[i].style.backgroundColor = "white";
+  }
+
+
+
+  // document.getElementById("result-reset").style.display = 'none';
+  window.location.href = "#custom-boba";
+}
 
 // custom tea choices
 
