@@ -152,7 +152,7 @@ nav:hover {
 
 ul {
 	height: 100%;
-	top: 10%;
+	top: 20%;
 	margin: 0;
 	padding: 0;
 	position: absolute;
@@ -170,6 +170,17 @@ nav li:hover {
 	/*background-color: rgba(255,255,255,.5);*/
 	text-decoration: underline;
 	color: #523800;
+}
+
+nav h2 {
+	cursor: pointer;
+
+}
+
+nav h2:hover {
+	text-decoration: underline;
+	color: #523800;
+
 }
 
 canvas {
