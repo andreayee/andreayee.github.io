@@ -45,12 +45,9 @@
 			
 		</div>
 
-		<div id="titlepage" class="page">
-			<div id="wave-holder">
+		<div id="titlepage" class="titlepage">
+			
 
-
-
-			</div>
 
 			<h1 class="example" >boballin' around the world</h1>
 			<p> 
@@ -60,7 +57,7 @@
 				<a href="#about">about</a> /
 
 				<a href="#findings">findings</a> /
-				<a href="#map">map</a> / 
+				<a href="#map-page">map</a> / 
 
 				<a href="#custom-boba">customize boba</a> / 
 				<a href="#boba-personality">personality test</a> / 
@@ -177,7 +174,7 @@
 
 
 
-		<div class="page" id="findings">
+		<div class="page findings titlepage" id="findings">
 
 			<h1>
 				our findings
@@ -185,7 +182,7 @@
 
 		</div>
 
-		<div class="page map" id="map">
+		<div class="page map-page" id="map-page">
 
 			
 
@@ -355,9 +352,9 @@
 		</div>
 
 
-		<div class="page">
+		<div class="page create titlepage">
 			<h1>
-				create your own bubble tea!
+				now that you know all about boba,  create your own bubble tea!
 			</h1>
 
 		</div>
@@ -559,78 +556,79 @@
 		<div id="boba-personality" class="page personality">
 			<div>
 				<h1>
-					what does your choice in bubble tea say about you?
+					let's read your (bubble) tea leaves
 				</h1>
+				<p><i>what does your boba order say about you?</i></p>
 			</div>
 		</div>
 
 		<div class="page personality">
 
 			<div class="personality-test-row">
-				<div class="personality-box">
+				<div class="personality-box" onclick="showOriginalMTResult()">
 					<img src="images/boba-orders/coffee-mt.png">
 				</div>
-				<div class="personality-box">
+				<div class="personality-box" onclick="showFruityTResult()">
 					<img src="images/boba-orders/fruity-t.png">
 				</div>
-				<div class="personality-box">
+				<div class="personality-box" onclick="showHazelnutMTResult()">
 					<img src="images/boba-orders/hazelnut-mt.png">
 				</div>
-				<div class="personality-box">
+				<div class="personality-box" onclick="showHokkaidoMTResult()">
 					<img src="images/boba-orders/hokkaido-mt.png">
 				</div>
-				<div class="personality-box">
+				<div class="personality-box" onclick="showHoneydewMTResult()">
 					<img src="images/boba-orders/honeydew-t.png">
 				</div>
 			</div>
 			<div class="personality-test-row">
-				<div class="personality-box">
+				<div class="personality-box" onclick="showJasmineMTResult()">
 					<img src="images/boba-orders/jasmine-mt.png">
 				</div>
-				<div class="personality-box">
+				<div class="personality-box" onclick="showLavenderMTResult()">
 					<img src="images/boba-orders/lavender-mt.png">
 				</div>
-				<div class="personality-box">
+				<div class="personality-box" onclick="showLycheeSlushResult()">
 					<img src="images/boba-orders/lychee-slush.png">
 				</div>
-				<div class="personality-box">
+				<div class="personality-box" onclick="showMangoSlushResult()">
 					<img src="images/boba-orders/mango-slush.png">
 				</div>
-				<div class="personality-box">
+				<div class="personality-box" onclick="showMatchaMTResult()">
 					<img src="images/boba-orders/matcha-mt.png">
 				</div>
 			</div>
 			<div class="personality-test-row"> 
-				<div class="personality-box">
+				<div class="personality-box" onclick="showOkinawaMTResult()">
 					<img src="images/boba-orders/okinawa-mt.png">
 				</div>
-				<div class="personality-box">
+				<div class="personality-box" onclick="showOolongMTResult()">
 					<img src="images/boba-orders/oolong-mt.png">
 				</div>
-				<div class="personality-box">
+				<div class="personality-box" onclick="showPassionfruitSlushResult()">
 					<img src="images/boba-orders/passionfruit-slush.png">
 				</div>
-				<div class="personality-box">
+				<div class="personality-box" onclick="showRoseMTResult()">
 					<img src="images/boba-orders/rose-mt.png">
 				</div>	
-				<div class="personality-box">
+				<div class="personality-box" onclick="showStrawberrySlushResult()">
 					<img src="images/boba-orders/strawberry-slush.png">
 				</div>
 			</div>
 			<div class="personality-test-row">
-				<div class="personality-box">
+				<div class="personality-box" onclick="showTaroMTResult()">
 					<img src="images/boba-orders/taro-mt.png">
 				</div>
-				<div class="personality-box">
+				<div class="personality-box" onclick="showThaiMTResult()">
 					<img src="images/boba-orders/thai-mt.png">
 				</div>
-				<div class="personality-box">
+				<div class="personality-box" onclick="showTigerMTResult()">
 					<img src="images/boba-orders/tiger-mt.png">
 				</div>
-				<div class="personality-box">
+				<div class="personality-box" onclick="showWintermelonMTResult()">
 					<img src="images/boba-orders/wintermelon-mt.png">
 				</div>	
-				<div class="personality-box">
+				<div class="personality-box" onclick="showOriginalMTResult()">
 					<img src="images/boba-orders/uwu-mt.png">
 				</div>
 			</div>
@@ -811,7 +809,14 @@
 					you’re probably funny and have a lot of people who genuinely like you even though you hate yourself a lil bit. don’t be so critical!
 
 				</p>
-			</div>			
+			</div>	
+
+
+
+
+			<div class="reset" id="reset-test" onclick="resetTest()">
+				<h3>reset</h3>
+			</div>		
 		</div>
 
 
@@ -821,7 +826,8 @@
 
 
 
-
+<div id="wave-holder">
+			</div>
 
 
 
@@ -830,7 +836,7 @@
 
 	</div>
 
-	<script src="js/sketch.js" charset="utf-8"></script>
+	<!-- <script src="js/sketch.js" charset="utf-8"></script> -->
 	<!-- <script src="js/scroll.js" charset="utf-8"></script> -->
 	<script src="js/scripts.js" charset="utf-8"></script>
 	<script src="js/customboba.js" charset="utf-8"></script>
@@ -840,7 +846,7 @@
 
 
 
-	<!-- <script src="js/wave.js" charset="utf-8"></script> -->
+	<script src="js/wave.js" charset="utf-8"></script>
 
 
 </body>
