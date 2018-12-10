@@ -77,6 +77,39 @@ p {
     font-family: 'helvetica', sans-serif;
 }
 
+
+.top-button {
+	height: 200px;
+	width: 100px;
+
+	/*background-color: white;*/
+
+	position: fixed;
+	bottom: 2.5%;
+	right: 2.5%;
+
+	display: flex;
+	flex-direction: column;
+
+	z-index: 20;
+
+	align-items: center;
+	justify-content: center;
+
+	cursor: pointer;
+
+}
+
+.top-button img {
+	width: 100%; 
+	height: auto;
+
+}
+
+.top-button h6 {
+	margin: 10px;
+}
+
 nav {
 
 	display: flex;

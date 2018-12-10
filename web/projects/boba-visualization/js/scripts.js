@@ -80,6 +80,10 @@ function goToPersonality() {
 }
 
 
+function backToTop() {
+  window.location.href = "#titlepage";
+}
+
 
 
 
