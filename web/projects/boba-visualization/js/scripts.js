@@ -6,6 +6,7 @@
 
 
 window.onload = document.getElementById("wave-holder").style.zIndex = 0;
+window.onload = document.getElementById("about").style.display = 'none';
 
 
 
@@ -57,6 +58,7 @@ function goToHistory() {
   window.location.href = "#history";
 }
 function goToAbout() {
+  document.getElementById("about").style.display = 'block';
   window.location.href = "#about";
 }
 function goToFindings() {
@@ -82,6 +84,10 @@ function goToPersonality() {
 
 function backToTop() {
   window.location.href = "#titlepage";
+}
+
+function closeAbout() {
+  document.getElementById("about").style.display = 'none';
 }
 
 
