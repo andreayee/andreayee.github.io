@@ -46,6 +46,58 @@ function showMap() {
 
 
 
+function goToExplanation() {
+  window.location.href = "#explanation";
+}
+
+function goToAnatomy() {
+  window.location.href = "#anatomy";
+}
+function goToHistory() {
+  window.location.href = "#history";
+}
+function goToAbout() {
+  window.location.href = "#about";
+}
+function goToFindings() {
+  window.location.href = "#findings";
+}
+
+function goToFindings() {
+  window.location.href = "#findings";
+}
+function goToMap() {
+  window.location.href = "#map-page";
+}
+function goToCharts() {
+  window.location.href = "#charts";
+}
+function goToCustom() {
+  window.location.href = "#custom";
+}
+function goToPersonality() {
+  window.location.href = "#boba-personality";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

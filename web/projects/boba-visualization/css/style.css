@@ -77,22 +77,6 @@ p {
     font-family: 'helvetica', sans-serif;
 }
 
-a:active, a:visited {
-	color: white;
-	text-decoration: none;
-	text-decoration-line: none;
-}
-
-a:hover {
-	color: #523800;
-}
-
-
-
-a {
-	text-decoration: none;
-	text-decoration-line: none;
-}
 nav {
 
 	display: flex;
@@ -119,6 +103,15 @@ nav {
 	font-size: 8pt;
 	color: white;
 	list-style-position: outside;
+	/*background-color: rgba(255,255,255,.1);*/
+	/*visibility: hidden;*/
+	opacity: 0;
+	
+}
+
+nav:hover {
+	/*visibility: visible;*/
+	opacity: 1;
 }
 
 ul {
@@ -128,12 +121,15 @@ ul {
 
 nav li {
 	
-	margin: 10px 0 10px 0;
+	margin: 25px 0 25px 0;
+	cursor: pointer;
+
 
 }
 
 nav li:hover {
-	background-color: rgba(255,255,255,.5);
+	/*background-color: rgba(255,255,255,.5);*/
+	text-decoration: underline;
 	color: #523800;
 }
 
