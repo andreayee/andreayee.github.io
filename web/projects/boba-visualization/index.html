@@ -9,7 +9,7 @@
 
 	<script src="js/lib/p5.js" charset="utf-8"></script>
 
-<!-- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
+	<!-- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
 
 	<script src="js/Chart.bundle.js" charset="utf-8"></script>
 
@@ -30,33 +30,46 @@
 			<h6>back to top</h6>
 		</div>
 
-				<div id="about">
+		<div id="about">
 
-			<div id="close-button" onclick="closeAbout()">
-				<p>x</p>
+			
+
+			<div class="about-text">
+
+
+				<div class="about-title">
+
+					<img id="alex-profile-img" onmouseover="showAlexBobaPicture()" onmouseout="hideAlexBobaPicture()"src="images/alex-profile-img.png">
+					<h1>
+						about our project
+					</h1>
+					<img id="andrea-profile-img" onmouseover="showAndreaBobaPicture()" onmouseout="hideAndreaBobaPicture()"src="images/andrea-profile-img.png">
+				</div>
+				<div>
+
+				<br>
+				<br>
+
+				<p>
+					Hi! We’re Andrea and Alex, two students at NYU. For a web design class, our final project was supposed to be Internet art, but we wanted to do something a little different. Since we’ve been studying in Shanghai, our boba habits have gone a bit haywire since it’s readily available pretty much everywhere we go or through ele.me, a delivery app, and it’s much cheaper than in the US. 
+				</p>
+				<p>
+					After seeing Krist Wongsuphasawat’s “Boba Science,” which visualizes the optimized sip of bubble tea such that you can finish your tea and boba at the same time, we wanted to know more about other people’s boba buying and drinking habits so we created a Google form to assess where in the world people are from, where they went to university if at all, their age, how often they get boba, where they get boba, and how they customize their drink. Moreover, we wanted to take all that information and present it in a fun and engaging way. 
+				</p>
+				<p>
+					Special thanks to Subtle Asian Traits for making up the bulk of our survey pool and for providing some entertaining and much needed information, like what your boba order says about you or just how many boba shops there are all over the world (and how they rank against each other).
+
+				</p>
+				<p>
+
+					Thanks so much for much for visiting our site, and have a bobalicious day! (ﾉ´ヮ`)ﾉ*:･ﾟ
+
+				</p>
+								<div id="close-button" onclick="closeAbout()">
+					<p>x</p>
+				</div>
 			</div>
-
-			<h1>
-				about our project
-			</h1>
-
-			<br>
-
-			<p>
-				Hi! We’re Andrea and Alex, two students at NYU. For a web design class, our final project was supposed to be Internet art, but we wanted to do something a little different. Since we’ve been studying in Shanghai, our boba habits have gone a bit haywire since it’s readily available pretty much everywhere we go or through ele.me, a delivery app, and it’s much cheaper than in the US. 
-			</p>
-			<p>
-				After seeing Krist Wongsuphasawat’s “Boba Science,” which visualizes the optimized sip of bubble tea such that you can finish your tea and boba at the same time, we wanted to know more about other people’s boba buying and drinking habits so we created a Google form to assess where in the world people are from, where they went to university if at all, their age, how often they get boba, where they get boba, and how they customize their drink. Moreover, we wanted to take all that information and present it in a fun and engaging way. 
-			</p>
-			<p>
-				Special thanks to Subtle Asian Traits for making up the bulk of our survey pool and for providing some entertaining and much needed information, like what your boba order says about you or just how many boba shops there are all over the world (and how they rank against each other).
-
-			</p>
-			<p>
-
-				Thanks so much for much for visiting our site, and have a bobalicious day! (ﾉ´ヮ`)ﾉ*:･ﾟ
-
-			</p>
+			</div>
 
 
 
@@ -67,11 +80,12 @@
 			
 			<h2 onclick="goToAbout()">about this project</h2>
 
-			<br>
-			<br>
+			<h4 id="toggle" onclick="toggleMusic()">turn music [on]</h4>
+
 			<br>
 
 			<h3>navigation</h3>
+
 
 
 			<ul>
@@ -115,6 +129,7 @@
 						personality quiz
 					</p>
 				</li>
+
 			</ul>
 		</nav>
 
@@ -131,14 +146,14 @@
 
 
 
-			<h1>⊂(･ω･*⊂) boballin' around the world 	(づ◡﹏◡)づ</h1>
+			<h1>⊂(･ω･*⊂) boballin' around the world 	(づ￣ ³￣)づ</h1>
 			<h6 class="flicker" id="subtext"><i>scroll down to continue</i></h6>
 		</div>
 
 		<div id="explanation" class="page">
 			<div class="title explanation-title">
 				<h1>
-					spilling the tea (づ￣ ³￣)づ
+					spilling the tea (づ◡﹏◡)づ 
 
 				</h1>
 				<h3>
@@ -565,7 +580,7 @@
 
 
 
-<!-- slush bottom flavors -->
+					<!-- slush bottom flavors -->
 
 					<img class="topping-img" id="kiwi-slush-base-img"src="images/diyboba/kiwi-slush-base.png">
 
@@ -908,6 +923,9 @@
 </body>
 
 <!-- <script src="js/sketch.js" charset="utf-8"></script> -->
+
+<audio id="background-music" name="blue avenue" src="media/blue-avenue.mp3" loop="true" hidden="true" autostart="false"></audio>
+
 
 
 <script src="js/scripts.js" charset="utf-8"></script>

@@ -118,7 +118,49 @@ function hideStrawDescription() {
 
 
 
+// profile images
 
+
+function showAlexBobaPicture() {
+document.getElementById("alex-profile-img").setAttribute("src","images/alex-profile-img-2.png")
+}
+
+function hideAlexBobaPicture() {
+document.getElementById("alex-profile-img").setAttribute("src","images/alex-profile-img.png")
+}
+
+function showAndreaBobaPicture() {
+document.getElementById("andrea-profile-img").setAttribute("src","images/andrea-profile-img-2.png")
+}
+
+function hideAndreaBobaPicture() {
+document.getElementById("andrea-profile-img").setAttribute("src","images/andrea-profile-img.png")
+}
+
+
+// function pauseMusic() {
+//   document.getElementById("andrea-profile-img").setAttribute("src","images/andrea-profile-img.png")
+// }
+
+
+var myAudio = document.getElementById("background-music");
+var isPlaying = false;
+
+function toggleMusic() {
+  if (isPlaying) {
+    myAudio.pause()
+  } else {
+    myAudio.play();
+  }
+};
+myAudio.onplaying = function() {
+  isPlaying = true;
+  document.getElementById("toggle").innerHTML = "turn music [off]";
+};
+myAudio.onpause = function() {
+  isPlaying = false;
+  document.getElementById("toggle").innerHTML = "turn music [on]";
+};
 
 
 
