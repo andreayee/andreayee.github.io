@@ -1,7 +1,7 @@
 var slushVisibility = false;
-var strawberryButtonOn = false;
+var ButtonOn = false;
 
-var slushButtons = [strawberryButtonOn, slushVisibility];
+var slushButtons = [ButtonOn, slushVisibility];
 
 
 function resetMT() {
@@ -9,7 +9,7 @@ function resetMT() {
 
 
 slushVisibility = false;
-strawberryButtonOn = false;
+ButtonOn = false;
 
 
   var teaImg = document.getElementsByClassName("tea-img");
@@ -100,9 +100,25 @@ function showOriginalFlavor() {
 }
 
 function showTaroFlavor() {
-    document.getElementById("taro-flavor-img").style.display = 'block';
-    document.getElementById("taro-flavor").style.backgroundColor = '#ffe9df';
+    if (ButtonOn === false){
+    if (slushVisibility === true ){
+      document.getElementById("taro-flavor-img").style.display = 'block';
+      document.getElementById("taro-slush-top-img").style.display = 'block';
+      document.getElementById("taro-slush-base-img").style.display = 'block';
+    }
+    else  {
+      document.getElementById("taro-flavor-img").style.display = 'block';
+    }
 
+    document.getElementById("taro-flavor").style.backgroundColor = '#ffe9df';
+    ButtonOn = true;
+  }else{
+    document.getElementById("taro-flavor-img").style.display = 'none';
+    document.getElementById("taro-slush-top-img").style.display = 'none';
+    document.getElementById("taro-flavor-img").style.display = 'none';
+    document.getElementById("taro-flavor").style.backgroundColor = '#ffffff';
+    ButtonOn = false;
+  }
 }
 
 
@@ -131,37 +147,71 @@ function showToffeeFlavor() {
 }
 
 function showMangoFlavor() {
-    // document.getElementById("mango-flavor-img").style.display = 'block';
-    document.getElementById("mango-flavor").style.backgroundColor = '#ffe9df';
+    if (ButtonOn === false){
+    if (slushVisibility === true ){
+      document.getElementById("mango-flavor-img").style.display = 'block';
+      document.getElementById("mango-slush-top-img").style.display = 'block';
+      document.getElementById("mango-slush-base-img").style.display = 'block';
+    }
+    else  {
+      document.getElementById("mango-flavor-img").style.display = 'block';
+    }
 
+    document.getElementById("mango-flavor").style.backgroundColor = '#ffe9df';
+    ButtonOn = true;
+  }else{
+    document.getElementById("mango-flavor-img").style.display = 'none';
+    document.getElementById("mango-slush-top-img").style.display = 'none';
+    document.getElementById("mango-flavor-img").style.display = 'none';
+    document.getElementById("mango-flavor").style.backgroundColor = '#ffffff';
+    ButtonOn = false;
+  }
 }
 
 function showStrawberryFlavor() {
-  if (strawberryButtonOn === false){
+  if (ButtonOn === false){
     if (slushVisibility === true ){
       document.getElementById("strawberry-flavor-img").style.display = 'block';
       document.getElementById("strawberry-slush-top-img").style.display = 'block';
+      document.getElementById("strawberry-slush-base-img").style.display = 'block';
     }
     else  {
       document.getElementById("strawberry-flavor-img").style.display = 'block';
     }
 
     document.getElementById("strawberry-flavor").style.backgroundColor = '#ffe9df';
-    strawberryButtonOn = true;
+    ButtonOn = true;
   }else{
     document.getElementById("strawberry-flavor-img").style.display = 'none';
     document.getElementById("strawberry-slush-top-img").style.display = 'none';
     document.getElementById("strawberry-flavor-img").style.display = 'none';
     document.getElementById("strawberry-flavor").style.backgroundColor = '#ffffff';
-    strawberryButtonOn = false;
+    ButtonOn = false;
   }
 }
 
 function showPassionfruitFlavor() {
-    // document.getElementById("passionfruit-flavor-img").style.display = 'block';
-    document.getElementById("passionfruit-flavor").style.backgroundColor = '#ffe9df';
+  if (ButtonOn === false){
+    if (slushVisibility === true ){
+      document.getElementById("passionfruit-flavor-img").style.display = 'block';
+      document.getElementById("passionfruit-slush-top-img").style.display = 'block';
+      document.getElementById("passionfruit-slush-base-img").style.display = 'block';
+    }
+    else  {
+      document.getElementById("passionfruit-flavor-img").style.display = 'block';
+    }
 
+    document.getElementById("passionfruit-flavor").style.backgroundColor = '#ffe9df';
+    ButtonOn = true;
+  }else{
+    document.getElementById("passionfruit-flavor-img").style.display = 'none';
+    document.getElementById("passionfruit-slush-top-img").style.display = 'none';
+    document.getElementById("passionfruit-flavor-img").style.display = 'none';
+    document.getElementById("passionfruit-flavor").style.backgroundColor = '#ffffff';
+    ButtonOn = false;
+  }
 }
+
 
 function showCitrusFlavor() {
     document.getElementById("citrus-flavor-img").style.display = 'block';
@@ -170,9 +220,25 @@ function showCitrusFlavor() {
 }
 
 function showRoseFlavor() {
-    document.getElementById("rose-flavor-img").style.display = 'block';
-    document.getElementById("rose-flavor").style.backgroundColor = '#ffe9df';
+    if (ButtonOn === false){
+    if (slushVisibility === true ){
+      document.getElementById("rose-flavor-img").style.display = 'block';
+      document.getElementById("rose-slush-top-img").style.display = 'block';
+      document.getElementById("rose-slush-base-img").style.display = 'block';
+    }
+    else  {
+      document.getElementById("rose-flavor-img").style.display = 'block';
+    }
 
+    document.getElementById("rose-flavor").style.backgroundColor = '#ffe9df';
+    ButtonOn = true;
+  }else{
+    document.getElementById("rose-flavor-img").style.display = 'none';
+    document.getElementById("rose-slush-top-img").style.display = 'none';
+    document.getElementById("rose-flavor-img").style.display = 'none';
+    document.getElementById("rose-flavor").style.backgroundColor = '#ffffff';
+    ButtonOn = false;
+  }
 }
 
 function showWintermelonFlavor() {
@@ -187,10 +253,27 @@ function showLycheeFlavor() {
 
 }
 function showKiwiFlavor() {
-    document.getElementById("kiwi-flavor-img").style.display = 'block';
-    document.getElementById("kiwi-flavor").style.backgroundColor = '#ffe9df';
+  if (ButtonOn === false){
+    if (slushVisibility === true ){
+      document.getElementById("kiwi-flavor-img").style.display = 'block';
+      document.getElementById("kiwi-slush-top-img").style.display = 'block';
+      document.getElementById("kiwi-slush-base-img").style.display = 'block';
+    }
+    else  {
+      document.getElementById("kiwi-flavor-img").style.display = 'block';
+    }
 
+    document.getElementById("kiwi-flavor").style.backgroundColor = '#ffe9df';
+    ButtonOn = true;
+  }else{
+    document.getElementById("kiwi-flavor-img").style.display = 'none';
+    document.getElementById("kiwi-slush-top-img").style.display = 'none';
+    document.getElementById("kiwi-flavor-img").style.display = 'none';
+    document.getElementById("kiwi-flavor").style.backgroundColor = '#ffffff';
+    ButtonOn = false;
+  }
 }
+
 
 function showPeachFlavor() {
     // document.getElementById("peach-flavor-img").style.display = 'block';
