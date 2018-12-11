@@ -3,7 +3,7 @@
 html, body {
   height: 100%;
   width: 100%;
-  min-width: 1500px;
+  min-width: 1200px;
 
 
   display: flex;
@@ -281,15 +281,78 @@ canvas {
 
 
 #anatomy {
-
-}
-
-#mt-anatomy {
+	display: flex;
+	flex-direction: column;
 	width: 100%;
-	height: auto;
-	z-index: 20;
+	height: 100%;
+
+	position: relative;
+
+/*	justify-content: center;
+	align-items: center;
+	text-align: center;*/
+
 
 }
+
+.anatomy-label {
+	top: 5%;
+
+
+	text-align: center;
+
+	z-index: 20;
+}
+
+.mt-anatomy {
+
+	width: 90%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+
+	position: absolute;
+	top: 5%;
+	
+	z-index: 20;
+}
+
+.mt-anatomy #mt-anatomy {
+	position: absolute;
+	width: 95%;
+	height: auto;
+	top: 0;
+	left: 2.5%;
+}
+
+.mt-anatomy #boba-description {
+	position: absolute;
+	width: 80%;
+	height: auto;
+	top: 50%;
+	left: 15%;
+	opacity: 0;
+}
+
+.mt-anatomy #mt-description {
+	position: absolute;
+	width: 80%;
+	height: auto;
+	top: 30%;
+	left: 12.5%;
+	opacity: 0;
+}
+
+.mt-anatomy #straw-description {
+	position: absolute;
+	width: 80%;
+	height: auto;
+	top: 2.5%;
+	left: 12.5%;
+	opacity: 0;
+}
+
+
 
 #history {
 	height: 150%;
@@ -413,7 +476,7 @@ canvas {
 	display: flex;
 	z-index: 10;
 
-	background-color: rgba(255,255,255,.5);
+	/*background-color: rgba(255,255,255,.5);*/
 
 }
 
@@ -519,7 +582,7 @@ display: none;
 	margin: 2.5% 0 2.5% 0;
 }
 .personality-test-row div {
-	background-color: #ffe9df;
+	background-color: #FFE5D6;
 	height: 200px;
 	width: 200px;
 	margin: 0 .5% 0 .5%;

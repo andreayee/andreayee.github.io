@@ -24,7 +24,7 @@ function setup() {
 
 function draw() {
   // background(0);
-  background(255,221,147);
+  background(245,210,147);
   balls.forEach(ball => {
   	ball.collide();
   	ball.move();

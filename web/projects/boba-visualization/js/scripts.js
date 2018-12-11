@@ -92,6 +92,30 @@ function closeAbout() {
 
 
 
+function showBobaDescription() {
+ document.getElementById("boba-description").style.opacity = 1;
+}
+
+function showMTDescription() {
+ document.getElementById("mt-description").style.opacity = 1;
+}
+
+function showStrawDescription() {
+ document.getElementById("straw-description").style.opacity = 1;
+}
+
+function hideBobaDescription() {
+ document.getElementById("boba-description").style.opacity = 0;
+}
+
+function hideMTDescription() {
+ document.getElementById("mt-description").style.opacity = 0;
+}
+
+function hideStrawDescription() {
+ document.getElementById("straw-description").style.opacity = 0;
+}
+
 
 
 

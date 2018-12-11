@@ -4,7 +4,7 @@ var ageboba = document.getElementById('ageChart');
 
 ageData = {
     datasets: [{
-        backgroundColor: 'rgb(255, 99, 132)',
+        backgroundColor: 'rgb(255, 174, 155)', 
         borderColor: 'rgb(255, 255, 255)',
 
         data: [19, 218, 23, 6, 8],
@@ -49,7 +49,7 @@ var bobabuy = document.getElementById('bobaBuying');
 buyData = {
     datasets: [{
         label: "Number of Respondents",
-        backgroundColor: 'rgb(255, 99, 132)',
+        backgroundColor: 'rgb(255, 174, 155)',
         borderColor: 'rgb(255, 255, 255)',
 
 
@@ -97,7 +97,7 @@ var toppingspreferred = document.getElementById('toppingsChart');
 topData = {
     datasets: [{
         label: "Number of Respondents",
-        backgroundColor: 'rgb(255, 99, 132)',
+        backgroundColor: 'rgb(255, 174, 155)',
         borderColor: 'rgb(255, 255, 255)',
 
 
@@ -271,7 +271,8 @@ var popData = {
       r: 1
     }],
 
-    backgroundColor: 'rgb(255, 99, 132)',
+    backgroundColor: 'rgb(255, 174, 155)',
+    borderColor: 'rgb(255, 255, 255)',
     hoverRadius: 5
   }]
 };
@@ -295,7 +296,7 @@ var teapreferences = document.getElementById('teaChart');
 
 teaData = {
     datasets: [{
-        backgroundColor: 'rgb(255, 99, 132)',
+        backgroundColor: 'rgb(255, 174, 155)',
         borderColor: 'rgb(255, 255, 255)',
 
         data: [100, 90, 43, 19, 19, 1, 2],
@@ -339,7 +340,7 @@ var milkpreferences = document.getElementById('milkChart');
 
 milkData = {
     datasets: [{
-        backgroundColor: 'rgb(255, 99, 132)',
+        backgroundColor: 'rgb(255, 174, 155)',
         borderColor: 'rgb(255, 255, 255)',
 
         data: [192, 33, 47, 2],
@@ -380,7 +381,7 @@ var flavorpreferences = document.getElementById('flavorChart');
 flavorData = {
     datasets: [{
         label: "Number of Respondents",
-        backgroundColor: 'rgb(255, 99, 132)',
+        backgroundColor: 'rgb(255, 174, 155)',
         borderColor: 'rgb(255, 255, 255)',
 
         data: [120, 6, 23, 19, 18, 3, 16, 2, 12, 6, 12, 9, 9, 10, 2, 1, 1, 5 ],

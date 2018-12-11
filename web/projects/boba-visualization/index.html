@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+	<link rel="shortcut icon" type="image/png" href="images/pmt-favicon.png"/>
 	<meta charset="utf-8">
 	<title>BobaLove</title>
 	<link rel="stylesheet" href="css/style.css">
@@ -23,7 +24,7 @@
 	<div class="container" id="container">
 
 		<div class="top-button" id="top-button" onclick="backToTop()">
-			<img src="images/mt-anatomy.png">
+			<img src="images/uwu-mt.png">
 			<h6>back to top</h6>
 		</div>
 
@@ -153,15 +154,20 @@
 			</div>
 		</div>
 
-		<div id="anatomy" class="page">
-			<div class="title">
+		<div id="anatomy" class="">
+			<div class="anatomy-label">
 				<h1>
 					anatomy of a bubble tea
 				</h1>
 
 			</div>
-			<div class="text">
+			<div class="mt-anatomy">
 				<img id="mt-anatomy" src="images/mt-anatomy.png">
+				<img onmouseover="showBobaDescription()" onmouseout="hideBobaDescription()" id="boba-description" src="images/boba-description.png">
+				<img onmouseover="showMTDescription()" onmouseout="hideMTDescription()" id="mt-description" src="images/mt-description.png">
+				<img onmouseover="showStrawDescription()" onmouseout="hideStrawDescription()" id="straw-description" src="images/straw-description.png">
+
+
 			</div>
 
 		</div>
