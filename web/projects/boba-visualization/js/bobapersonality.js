@@ -10,7 +10,7 @@ function resetTest () {
 
 
 	document.getElementById("result-reset").style.display = 'none';
-	window.location.href = "#boba-personality";
+	window.location.href = "#boba-personality-quiz";
 
 }
 

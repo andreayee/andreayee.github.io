@@ -1,13 +1,23 @@
+var slushVisibility = false;
+var strawberryButtonOn = false;
+
+var slushButtons = [strawberryButtonOn, slushVisibility];
+
+
 function resetMT() {
 
 
-var teaImg = document.getElementsByClassName("tea-img");
+
+slushVisibility = false;
+strawberryButtonOn = false;
 
 
-  var i;
-  for (i = 0; i < teaImg.length; i++) {
+  var teaImg = document.getElementsByClassName("tea-img");
+
+  for (var i = 0; i < teaImg.length; i++) {
     teaImg[i].style.display = "none";
   }
+
 
 var toppingImg = document.getElementsByClassName("topping-img");
 
@@ -16,6 +26,7 @@ var toppingImg = document.getElementsByClassName("topping-img");
   for (i = 0; i < toppingImg.length; i++) {
     toppingImg[i].style.display = "none";
   }
+
 
 
 var buttons = document.getElementsByClassName("tea-choice");
@@ -77,7 +88,7 @@ function showThaiTea() {
 function showSlush() {
     document.getElementById("slush-img").style.display = 'block';
     document.getElementById("slush").style.backgroundColor = '#ffe9df';
-
+    slushVisibility = true;
 }
 
 
@@ -126,9 +137,24 @@ function showMangoFlavor() {
 }
 
 function showStrawberryFlavor() {
-    document.getElementById("strawberry-flavor-img").style.display = 'block';
-    document.getElementById("strawberry-flavor").style.backgroundColor = '#ffe9df';
+  if (strawberryButtonOn === false){
+    if (slushVisibility === true ){
+      document.getElementById("strawberry-flavor-img").style.display = 'block';
+      document.getElementById("strawberry-slush-top-img").style.display = 'block';
+    }
+    else  {
+      document.getElementById("strawberry-flavor-img").style.display = 'block';
+    }
 
+    document.getElementById("strawberry-flavor").style.backgroundColor = '#ffe9df';
+    strawberryButtonOn = true;
+  }else{
+    document.getElementById("strawberry-flavor-img").style.display = 'none';
+    document.getElementById("strawberry-slush-top-img").style.display = 'none';
+    document.getElementById("strawberry-flavor-img").style.display = 'none';
+    document.getElementById("strawberry-flavor").style.backgroundColor = '#ffffff';
+    strawberryButtonOn = false;
+  }
 }
 
 function showPassionfruitFlavor() {

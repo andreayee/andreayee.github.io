@@ -211,7 +211,7 @@ canvas {
 }
 
 
-.page h1, p {
+.page h1, h6 {
 	z-index: 10;
 }
 
@@ -224,6 +224,7 @@ canvas {
 	margin-bottom: 5%;
 	z-index: 6;
 }
+
 
 
 
@@ -812,10 +813,6 @@ iframe #document .i4ewOd-haAclf .i4ewOd-pzNkMb-haAclf {
 
 	cursor: pointer;
 }
-
-
-
-
 
 
 
