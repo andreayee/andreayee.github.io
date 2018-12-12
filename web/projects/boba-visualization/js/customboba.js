@@ -13,15 +13,12 @@ function resetMT() {
 
 
   var teaImg = document.getElementsByClassName("tea-img");
-
   for (var i = 0; i < teaImg.length; i++) {
     teaImg[i].style.display = "none";
   }
 
 
   var toppingImg = document.getElementsByClassName("topping-img");
-
-
   var i;
   for (i = 0; i < toppingImg.length; i++) {
     toppingImg[i].style.display = "none";
@@ -30,8 +27,6 @@ function resetMT() {
 
 
   var buttons = document.getElementsByClassName("tea-choice");
-
-
   var i;
   for (i = 0; i < buttons.length; i++) {
     buttons[i].style.backgroundColor = "white";

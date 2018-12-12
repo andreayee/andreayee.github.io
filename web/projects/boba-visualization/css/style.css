@@ -8,6 +8,7 @@ html, body {
 
   display: flex;
   flex-direction: column;	
+  flex-wrap: wrap;
 
   overflow-x: hidden;
 
@@ -122,10 +123,12 @@ nav {
 	text-decoration: none;
 	text-decoration-line: none;
 
+	justify-content: center;
+	align-items: center;
 	
 
-	top: 5%;
-	left: 2.5%;
+	top: 1%;
+	left: 1.5%;
 	width: 7%;
 	height: 100%;
 
@@ -145,6 +148,12 @@ nav {
 	
 }
 
+.nav-header {
+	
+	position: absolute;
+	top: 0;
+}
+
 nav:hover {
 	/*visibility: visible;*/
 	opacity: 1;
@@ -152,7 +161,7 @@ nav:hover {
 }
 
 ul {
-	height: 100%;
+	/*height: 100%;*/
 	top: 25%;
 	margin: 0;
 	padding: 0;
@@ -233,8 +242,9 @@ canvas {
 
 #titlepage {
 
-
+	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 
 	text-align: center;
 	align-items: center;
@@ -260,7 +270,7 @@ canvas {
 	align-items: flex-start;
 	justify-content: center;
 
-	height: 125%;
+	height: 150%;
 }
 
 
@@ -647,22 +657,21 @@ iframe {
 	background-color: rgba(255,255,255,.3);
 	z-index: 2;
 
-	justify-content: center;
-	align-items: center;
 	text-align: center;
+	justify-content: center;
 
 }
 
-/*.transparent-box:hover {
-	opacity: .5;
-}*/
+.transparent-box h3 {
+	margin-top: 25%;
+}
 
 
 .map-text {
 	width: 80%;
 	display: flex;
 	position: relative;
-	top: 25%;
+	top: 30%;
 	
 }
 
@@ -756,7 +765,7 @@ iframe #document .i4ewOd-haAclf .i4ewOd-pzNkMb-haAclf {
 	background-image: url("../images/uwu-background.png");
 	background-repeat: repeat;
 
-
+	overflow-y: hidden;
 
 	display: flex;
 	flex-direction: column;

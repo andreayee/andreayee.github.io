@@ -43,6 +43,9 @@ function showMap() {
       }
 }
 
+function hideMap() {
+  document.getElementById("mapbox").style.display = 'block';
+}
 
 
 
