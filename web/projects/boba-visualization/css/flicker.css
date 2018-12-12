@@ -1,21 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @keyframes flickerAnimation {
   0%   { opacity:1; }
   50%  { opacity:0; }
@@ -38,8 +20,8 @@
 }
 
 .flicker {
- -webkit-animation: flickerAnimation 8s infinite;
- -moz-animation: flickerAnimation 8s infinite;
- -o-animation: flickerAnimation 8s infinite;
- animation: flickerAnimation 8s infinite;
+   -webkit-animation: flickerAnimation 8s infinite;
+   -moz-animation: flickerAnimation 8s infinite;
+   -o-animation: flickerAnimation 8s infinite;
+    animation: flickerAnimation 8s infinite;
 }
