@@ -188,7 +188,7 @@ nav h2, h4 {
 
 }
 
-nav h2:hover, h4:hover {
+nav h2:hover, nav h4:hover {
 	text-decoration: underline;
 	color: #523800;
 
