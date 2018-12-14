@@ -3,6 +3,12 @@ var ButtonOn = false;
 
 var slushButtons = [ButtonOn, slushVisibility];
 
+function finishMT () {
+  document.getElementById("slurp-audio").play();
+   window.location.href = "#boba-personality";
+   
+} 
+
 
 function resetMT() {
 

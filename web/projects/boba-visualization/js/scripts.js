@@ -125,25 +125,22 @@ function hideStrawDescription() {
 
 
 function showAlexBobaPicture() {
-document.getElementById("alex-profile-img").setAttribute("src","images/alex-profile-img-2.png")
+document.getElementById("alex-profile-img").setAttribute("src","images/alex-profile-img-2.png");
+document.getElementById("slurp-audio").play();
 }
 
 function hideAlexBobaPicture() {
-document.getElementById("alex-profile-img").setAttribute("src","images/alex-profile-img.png")
+document.getElementById("alex-profile-img").setAttribute("src","images/alex-profile-img.png");
 }
 
 function showAndreaBobaPicture() {
-document.getElementById("andrea-profile-img").setAttribute("src","images/andrea-profile-img-2.png")
+document.getElementById("andrea-profile-img").setAttribute("src","images/andrea-profile-img-2.png");
+document.getElementById("slurp-audio").play();
 }
 
 function hideAndreaBobaPicture() {
-document.getElementById("andrea-profile-img").setAttribute("src","images/andrea-profile-img.png")
+document.getElementById("andrea-profile-img").setAttribute("src","images/andrea-profile-img.png");
 }
-
-
-// function pauseMusic() {
-//   document.getElementById("andrea-profile-img").setAttribute("src","images/andrea-profile-img.png")
-// }
 
 
 var myAudio = document.getElementById("background-music");
@@ -154,6 +151,7 @@ function toggleMusic() {
     myAudio.pause()
   } else {
     myAudio.play();
+    myAudio.volume = 0.2;
   }
 };
 myAudio.onplaying = function() {
