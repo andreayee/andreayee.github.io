@@ -17,13 +17,13 @@ window.onload = document.getElementById("about").style.display = 'none';
 
 window.addEventListener("click", function(event) {
 
-  document.getElementById("bouncing-boba").style.display = 'none';
-  document.getElementById("bouncing-boba").style.visibility = "none";
+  document.getElementById("bouncing-boba").style.display = 'block';
+  document.getElementById("bouncing-boba").style.visibility = "block";
 
 
 
-  document.getElementById("wave-holder").style.display = "block";
-  document.getElementById("wave-holder").style.zIndex = 4;
+  // document.getElementById("wave-holder").style.display = "block";
+  // document.getElementById("wave-holder").style.zIndex = 4;
 
 
 
